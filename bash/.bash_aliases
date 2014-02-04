@@ -7,6 +7,7 @@ alias codecount="ls *.[c-h] | xargs wc "
 alias doxygencommentsready="ls *.[c-h] | xargs sed -i 's/\/\*/\/\*\*/g'"
 alias cleandoxygencommentsready="ls *.[c-h] | xargs sed -i 's/\/\*\+/\/\*\*/g'"
 alias vi='vim'
+alias sshmu='ssh -t -X jn4snz@wtrw.lanl.gov ssh mu-fe.lanl.gov'
 
 # git aliases
 alias gco='git co'

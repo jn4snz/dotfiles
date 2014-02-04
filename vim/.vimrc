@@ -71,7 +71,8 @@ autocmd FileType fortran setlocal textwidth=0
 
 set autoindent
 set cindent
-"set number
+set number
+set cursorline
 "set tabstop=4
 "set shiftwidth=4
 "set softtabstop=4 

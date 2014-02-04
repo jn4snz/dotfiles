@@ -11,17 +11,17 @@ export BASH_IT=$HOME/.bash_it
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
-export BASH_IT_THEME='demula'
+#export BASH_IT_THEME='demula'
 
 # -- EHH -- export BASH_IT_THEME='doubletime'
 
-export BASH_IT_THEME='envy'
+#export BASH_IT_THEME='envy'
 
 # -- EHH -- export BASH_IT_THEME='mbriggs'
 # -- EHH -- export BASH_IT_THEME='rainbowbrite'
 # -- EHH -- export BASH_IT_THEME='rjorgenson' #  I like the prompt, don't understand the T:0 and don't like the colors.
-export BASH_IT_THEME='zork'
-export BASH_IT_THEME='colorful'
+#export BASH_IT_THEME='zork'
+export BASH_IT_THEME='jn4snz'
 
 # Your place for hosting Git repos. I use this for private repos.
 export GIT_HOSTING='git@github.com'
@@ -80,7 +80,7 @@ if [ $platform == 'macosx' ]; then
   # export CLICOLOR=1
   # export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
-  alias ls='CLICOLOR_FORCE=1 ls -G'
+#  alias ls='CLICOLOR_FORCE=1 ls -G'
   alias less='less -R'
   alias dir='dir --color=always'
   alias vdir='vdir --color=always'
@@ -89,9 +89,6 @@ if [ $platform == 'macosx' ]; then
   alias fgrep='fgrep --color=always'
   alias egrep='egrep --color=always'
 
-  ##
-  # Your previous /Users/pwolfram/.bash_profile file was backed up as /Users/pwolfram/.bash_profile.macports-saved_2014-01-07_at_16:00:10
-  ##
 
   source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 
@@ -99,10 +96,10 @@ if [ $platform == 'macosx' ]; then
   export PATH=/usr/local/sbin:$PATH
 
 
-  export PYTHONDIR=/Library/Frameworks/Python.framework/Versions/2.7/bin
-  export PYTHONPATH=$PYTHONPATH:/Library/Frameworks/Python.framework/Versions/2.7/bin
-  export PYTHONPATH=$PYTHONPATH:/Users/pwolfram/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages
-  export PYTHONPATH=$PYTHONPATH:/Applications/Canopy.app/appdata/canopy-1.0.1.1189.macosx-x86_64/Canopy.app/Contents/lib/python2.7/site-packages
+#  export PYTHONDIR=/Library/Frameworks/Python.framework/Versions/2.7/bin
+#  export PYTHONPATH=$PYTHONPATH:/Library/Frameworks/Python.framework/Versions/2.7/bin
+#  export PYTHONPATH=$PYTHONPATH:/Users/pwolfram/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages
+#  export PYTHONPATH=$PYTHONPATH:/Applications/Canopy.app/appdata/canopy-1.0.1.1189.macosx-x86_64/Canopy.app/Contents/lib/python2.7/site-packages
 
   # Added by Canopy installer on 2014-01-10
   # VIRTUAL_ENV_DISABLE_PROMPT can be set to '' to make bashprompt show that Canopy is active, otherwise 1
@@ -123,3 +120,7 @@ if [ $platform == 'macosx' ]; then
   #generalized colors
   source "`brew --prefix grc`/etc/grc.bashrc"
 fi
+
+#MacPorts Installer addition on 2013-11-07_at_15:09:06: adding an appropriate PATH variable for use with MacPorts
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
