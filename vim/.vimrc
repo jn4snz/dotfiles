@@ -82,9 +82,9 @@ set foldmethod=marker
 set hlsearch
 set ignorecase
 set smartindent
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2 
+set tabstop=3
+set shiftwidth=3
+set softtabstop=3 
 set expandtab
 filetype indent on
 " automatically save and load folds
@@ -181,3 +181,8 @@ nnoremap <silent> <leader>tp :tabp<CR>
 nnoremap <silent> <leader>tl :tablast<CR>
 nnoremap <silent> <leader>tf :tabfirst<CR>
 "}}}
+
+syntax enable
+set background=dark
+colorscheme solarized
+
